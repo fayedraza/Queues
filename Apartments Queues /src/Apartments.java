@@ -1,19 +1,15 @@
-
-/////////////////////////
-/////////////////////////
 //Created by Fayed Raza
-/////////////////////////
-/////////////////////////
+
 
 public class Apartments {
 
-	 Floor head;
+Floor head;
  int x;
 
  //purpose is to add or remove floors using queues
 
  
-   //method used by create floor
+   //this method is used by the createFloor method
 	private void addfirstfloor(int occupant) {
 		Floor floors = new Floor(occupant);
 		
@@ -25,7 +21,7 @@ public class Apartments {
 	}
 	
 	
-	//create floor is the add method
+	//createFloor method is the add method
 	//adds it to the top of the queue
 	public void createFloor(int occupant) {
 		if(x != 0) {
@@ -46,7 +42,7 @@ public class Apartments {
 	}
 	
 	
-	//used by other methods to see if queue exists
+	//this method is used by other methods to see if the queue exists
 	public Boolean isEmpty() {
 		return head == null;
 	}
@@ -63,10 +59,10 @@ public class Apartments {
 	}
 	
 	
-	//returns the latest floor
+	//returns the latest floor of the queue
 public void peak() {
 	
-	if(isEmpty()) {// check if the method is empty 
+	if(isEmpty()) {// checks if the queue is empty 
 		System.out.println("Apartment building does not exist");
 		return;
 	}
@@ -86,7 +82,7 @@ public void peak() {
 
 //prints all of the floors and its occupants
 public void printAllFloor() {
-	if(isEmpty()) {// check if the method is empty 
+	if(isEmpty()) {// checks if the queue is empty 
 		System.out.println("Apartment building does not exist");
 		return;
 	}
