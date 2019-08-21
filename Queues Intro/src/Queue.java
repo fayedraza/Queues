@@ -2,7 +2,7 @@
 import java.util.*;
 
 public class Queue {
-	//purpose is to introduce queue
+	//purpose is to introduce queues
 	public static void main(String ...args) {
   PriorityQueue<String> q = new  PriorityQueue<String>();
 
